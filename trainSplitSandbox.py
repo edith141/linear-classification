@@ -1,3 +1,5 @@
+# SANDBOX FILE TO UNDERSTAND AND IMPLEMENT TEST-TRAIN SPLIT IN DATASET.
+
 import numpy as np
 import random
 
@@ -31,11 +33,10 @@ def testTrainSplit():
     return training, test
 
 def get_train_test_inds(y,train_proportion=0.7):
-    '''Generates indices, making random stratified split into training set and testing sets
-    with proportions train_proportion and (1-train_proportion) of initial sample.
-    y is any iterable indicating classes of each observation in the sample.
-    Initial proportions of classes inside training and 
-    testing sets are preserved (stratified sampling).
+    '''Generates indices, making random stratified split into train-test subsets
+    with proportions -> train_proportion (and 1 - train_proportion) of the initial sample.
+    y is any iterable indicating classes of each observation in the given sample.
+    (stratified sampling).
     '''
 
     y=np.array(y)
@@ -46,13 +47,13 @@ def get_train_test_inds(y,train_proportion=0.7):
         value_inds = np.nonzero(y==value)[0]
         np.random.shuffle(value_inds)
         n = int(train_proportion*len(value_inds))
-
         train_inds[value_inds[:n]]=True
         test_inds[value_inds[n:]]=True
 
     return train_inds,test_inds
 
 def trainTestSplit2(dataset, ratio):
+#     THIS ONE IS BETTER AND MUCH MORE SIMPLE!
     elems = len(dataset)
     middle = int(elems * ratio)
     return dataset[:middle], dataset[middle:]
