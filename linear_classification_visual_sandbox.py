@@ -1,3 +1,8 @@
+# WIP!
+
+# TO VISUALLY SEE PERFORMANCE AND ALL. 
+# WIP!
+
 from cProfile import label
 from math import exp
 from random import shuffle
