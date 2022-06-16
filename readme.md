@@ -13,7 +13,8 @@ The key difference here to note is the o/p is either 0 or 1 (binary).
 
 The sigmoid function is of the form: 
 $$y =g(z) = \frac{1}{1 + e^-z} $$
-GZ IMAGE INSERT!
+
+![sigmoid_func](/sigmoid_func.png)
 
 Now, in terms of input "x" and coeff "w", we can write this as:
 $$h_w(x) =g(w.x) = \frac{1}{1 +e^(-w.x^)} $$
@@ -52,8 +53,12 @@ The algorithm will try and find (and optimise) the weight and bias. At the end, 
 ## The model and results
 The algorithm/model improves the pridiction with each iteration (optimises wt and bias) moving towards the direction suggested by the slope of the gradient. The error rate is shown here.
 ERROR RATE IMAGE!
-![initial state](/zero%20iter.png)
+![initial state](/error_rate_ss.png)
 
 
 ## Calculating the avg accuracy of the model with 5 different (random) subsets of train and test data.
 The avg accuracy I get with different runs is almost always above 95%. Sometimes however, it goes near 90% and even fewer times, near 85%. The low accuracy is best explained by the random subsets of possibly skewed datasets being created and thus affecting the accuracy of the model.
+
+![initial state](/res1.png)
+![initial state](/res2.png)
+![initial state](/res3.png)
