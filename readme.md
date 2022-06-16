@@ -45,7 +45,7 @@ The same equation is used in the code as well to update the coeff.
 
 ### The data:
 Provided in the file. Earthquake magnitude data and underground explosions data; predict (classify) if an event was an earthquake or not (0 or 1).
-
+The data set, in each run, is first randomized. Then the data set is split in subsets - train dataset, and the test dataset. This is repeated 5 times for 5 individual runs of the model to get a better idea of the performace of the model.
 
 The algorithm will try and find (and optimise) the weight and bias. At the end, we should have an equation that outputs 0/1.
 
