@@ -1,3 +1,7 @@
+# TRIED TO SEE HOW DATASET OF A TYPICAL PROBLEM LOOKS LIKE.
+# WIP!
+# WILL PROBABLY DELETE
+
 from sklearn.datasets import load_breast_cancer
 
 #Loading the data
