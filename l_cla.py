@@ -1,3 +1,6 @@
+# WIP 
+# PROBABLY WILL DELETE
+
 import numpy as np
 import sys
 # from random import randint
